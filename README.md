@@ -16,5 +16,9 @@ main:
   jal input_validation
   move $t2, $v0
 
-  
-  
+#to calculate and print the greatest common divisor
+  jal calculate_gcd
+
+#exit program
+  lu $v0, 10
+  syscall
