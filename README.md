@@ -28,4 +28,7 @@ input_validation:
   li $v0, 4  #syscall: print_str
   la $a0, prompt_msg
   syscall
+
+  li $v0, 5  #syscall: read_int
+  syscall
   
