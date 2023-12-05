@@ -48,3 +48,7 @@ illegal_input:
 #function to calc GCD
 calculate_gcd:
   move $t3, $t0  #t3 = L
+
+gcd_loop:
+  move $t4, $t1  #t4 = M
+  move $t5, $t2  #t5 = N
