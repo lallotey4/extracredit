@@ -70,3 +70,9 @@ inner_gcd_loop:
 done_gcd:
   #check if GCD = 1 
   beq $t3, 1, no_common_divisor
+
+  li $v0, 4   #syscall: print_str
+  la $a0, result_msg
+  syscall
+
+  li
