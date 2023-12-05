@@ -52,3 +52,7 @@ calculate_gcd:
 gcd_loop:
   move $t4, $t1  #t4 = M
   move $t5, $t2  #t5 = N
+
+inner_gcd_loop:
+  beq $t4, $zero, done_gcd  #if t4/M = 0, GCD -> t3/L
+  move $t6, $t3    #t6 = t3, L
