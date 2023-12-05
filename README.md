@@ -46,3 +46,5 @@ illegal_input:
   j input_validation
 
 #function to calc GCD
+calculate_gcd:
+  move $t3, $t0  #t3 = L
