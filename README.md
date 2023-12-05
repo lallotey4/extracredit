@@ -31,4 +31,8 @@ input_validation:
 
   li $v0, 5  #syscall: read_int
   syscall
+
+  #check if it qualifies as an illegal input
+  bgt $v0, 20, legal_input
+  j illegal_input
   
