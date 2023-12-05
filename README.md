@@ -55,4 +55,10 @@ gcd_loop:
 
 inner_gcd_loop:
   beq $t4, $zero, done_gcd  #if t4/M = 0, GCD -> t3/L
-  move $t6, $t3    #t6 = t3, L
+  move $t6, $t3  #t6 = t3, L
+  div $t5, $t4    #t3 (L) = t5(N)/t4(M)
+  mfhi $t3        #t3(L) = remainder of the division
+
+  #swap t4 (M) and t5 (N) for the next iteration
+  move $t5, $t4
+  move $t4, $t3
