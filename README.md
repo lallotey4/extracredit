@@ -78,3 +78,7 @@ done_gcd:
   li $v0, 1  #syscall: print_int
   move $a0, $t3  #GCD value
   syscall
+
+  jr $ra
+
+no_common_divisor
