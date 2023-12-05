@@ -20,5 +20,12 @@ main:
   jal calculate_gcd
 
 #exit program
-  lu $v0, 10
+  li $v0, 10
   syscall
+
+#func to validate user the user's input
+input_validation:
+  li $v0, 4  #syscall: print_str
+  la $a0, prompt_msg
+  syscall
+  
