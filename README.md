@@ -42,3 +42,7 @@ legal_input:
 illegal_input:
   li $v0, 4  #syscall: print_str
   la $a0, error_msg
+  syscall
+  j input_validation
+
+#function to calc GCD
