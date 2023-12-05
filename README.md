@@ -35,4 +35,8 @@ input_validation:
   #check if it qualifies as an illegal input
   bgt $v0, 20, legal_input
   j illegal_input
-  
+
+legal_input:
+  jr $ra
+
+illegal_input:
