@@ -75,4 +75,6 @@ done_gcd:
   la $a0, result_msg
   syscall
 
-  li
+  li $v0, 1  #syscall: print_int
+  move $a0, $t3  #GCD value
+  syscall
