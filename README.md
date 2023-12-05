@@ -14,4 +14,7 @@ main:
   jal input_validation
   move $t1, $v0
   jal input_validation
+  move $t2, $v0
+
+  
   
