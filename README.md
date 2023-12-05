@@ -7,4 +7,6 @@ no_gcd: .asciiz "No common divisor (other than 1)\n"
   .text
   .globl main
 
-  
+main:
+#input validation (L,M,N)
+  jal input_vali
