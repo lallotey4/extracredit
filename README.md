@@ -62,3 +62,11 @@ inner_gcd_loop:
   #swap t4 (M) and t5 (N) for the next iteration
   move $t5, $t4
   move $t4, $t3
+
+  #Restore t3(L) for the next iteration 
+  move $t3, $t6
+  j inner_gcd_loop
+
+done_gcd:
+  #check if GCD = 1 
+  beq $t3, 1, no_common_divisor
