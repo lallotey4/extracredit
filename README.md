@@ -81,4 +81,9 @@ done_gcd:
 
   jr $ra
 
-no_common_divisor
+no_common_divisor:
+  li $v0, 4  #syscall: print_str
+  la $a0, no_gcd
+  syscall
+
+  jr $ra
