@@ -9,6 +9,9 @@ no_gcd: .asciiz "No common divisor (other than 1)\n"
 
 main:
 #input validation (L,M,N)
-  jal input_vali
+  jal input_validation
   move $t0, $v0 #inputting validation for L
+  jal input_validation
+  move $t1, $v0
+  jal input_validation
   
